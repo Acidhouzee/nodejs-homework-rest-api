@@ -2,7 +2,10 @@ const express = require('express');
 const router = express.Router();
 const contactsControllers = require('../../controllers/index');
 const isValidId = require('../../middelwares/isValueId');
-const { validateFavoriteContact } = require('../../schemas/schemas');
+const { validateFavoriteContact } = require('../../schemas/contactsScheme');
+const authenticate = require('../../middelwares/authenticate');
+
+router.use(authenticate);
 
 router.get('/', contactsControllers.getContacts.getContacts);
 
