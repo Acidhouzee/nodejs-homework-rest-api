@@ -11,7 +11,7 @@ router.get('/', contactsControllers.getContacts.getContacts);
 
 router.get('/:contactId', isValidId, contactsControllers.getContactsById.getContactsById);
 
-router.post('/', contactsControllers.addNewContact.addNewContact);
+router.post('/', contactsControllers.addNewContact.addNewContact); 
 
 router.delete('/:contactId', contactsControllers.deleteContact.deleteContact);
 

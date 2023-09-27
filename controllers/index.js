@@ -6,7 +6,8 @@ const deleteContact = require('./contacts/deleteContact');
 const authSignUp = require('./user/authSignUp');
 const authSignIn = require('./user/authSignIn');
 const authCurrent = require('./user/authCurrent');
-const authSignOut = require('./user/authSignOut')
+const authSignOut = require('./user/authSignOut');
+const updateUserAvatar = require('./user/updateUserAvatar');
 
 module.exports = {
   addNewContact,
@@ -17,5 +18,6 @@ module.exports = {
   authSignUp,
   authSignIn,
   authCurrent,
-  authSignOut
+  authSignOut,
+  updateUserAvatar
 };
