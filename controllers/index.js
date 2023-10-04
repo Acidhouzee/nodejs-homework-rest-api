@@ -8,6 +8,8 @@ const authSignIn = require('./user/authSignIn');
 const authCurrent = require('./user/authCurrent');
 const authSignOut = require('./user/authSignOut');
 const updateUserAvatar = require('./user/updateUserAvatar');
+const authVerify = require('./user/authVerify');
+const resendVerifyEmail = require('./user/resendVerifyEmail');
 
 module.exports = {
   addNewContact,
@@ -19,5 +21,7 @@ module.exports = {
   authSignIn,
   authCurrent,
   authSignOut,
-  updateUserAvatar
+  updateUserAvatar,
+  authVerify,
+  resendVerifyEmail
 };

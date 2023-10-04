@@ -9,6 +9,8 @@
     "lint:fix": "eslint --fix **/*.js"
   },
   "dependencies": {
+    "@elasticemail/elasticemail-client": "^4.0.23",
+    "@sendgrid/mail": "^7.7.0",
     "bcryptjs": "^2.4.3",
     "cors": "2.8.5",
     "cross-env": "7.0.3",
@@ -19,7 +21,11 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.5.0",
     "morgan": "1.10.0",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "nanoid": "^5.0.1",
+    "nodemailer": "^6.9.5",
+    "uuid": "^9.0.1",
+    "ws": "^8.14.2"
   },
   "devDependencies": {
     "eslint": "7.19.0",
@@ -28,6 +34,7 @@
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "5.2.0",
+    "esm": "^3.2.25",
     "nodemon": "2.0.15"
   }
 }
